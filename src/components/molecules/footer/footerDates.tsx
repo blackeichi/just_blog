@@ -1,6 +1,6 @@
 import { getFormattedDate } from "@/utils/time";
 import { useEffect, useState } from "react";
-import ImgComponent from "../atoms/imgComponent";
+import ImgComponent from "../../atoms/imgComponent";
 
 export default function FooterDates() {
   const [time, setTime] = useState<Date>(new Date());

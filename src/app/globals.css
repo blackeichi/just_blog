@@ -6,3 +6,6 @@
   -ms-use-select: none;
   user-select: none;
 }
+:focus {
+  outline: none;
+}

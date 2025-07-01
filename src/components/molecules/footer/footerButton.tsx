@@ -1,8 +1,8 @@
 import { pressStart } from "@/utils/fonts";
-import ImgComponent from "../atoms/imgComponent";
-import { layoutProps } from "@/types/layoutT";
+import ImgComponent from "../../atoms/imgComponent";
+import { footerProps } from "@/types/layoutT";
 
-export default function FooterButton({ isOpen, setIsOpen }: layoutProps) {
+export default function FooterButton({ isOpen, setIsOpen }: footerProps) {
   return (
     <div
       className={` h-full px-0.5 overflow-hidden border-2 border-gray-600 border-t-gray-300 border-l-gray-300 flex items-center justify-center`}

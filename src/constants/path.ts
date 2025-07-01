@@ -18,21 +18,21 @@ export const MENU_LIST: menuT = {
   [MENUS.HOME]: {
     name: "Home",
     path: ROUTES[MENUS.HOME],
-    imgPath: "/images/myComputer",
+    imgPath: "/images/myComputer.png",
   },
   [MENUS.PROFILE]: {
     name: "Profile",
     path: ROUTES[MENUS.PROFILE],
-    imgPath: "/images/document",
+    imgPath: "/images/document.png",
   },
   [MENUS.CAREER]: {
     name: "Career",
     path: ROUTES[MENUS.CAREER],
-    imgPath: "/images/postsFolder",
+    imgPath: "/images/postsFolder.png",
   },
   [MENUS.END]: {
     name: "End",
     path: ROUTES[MENUS.END],
-    imgPath: "/images/monitor_moon",
+    imgPath: "/images/monitor_moon.png",
   },
 };
