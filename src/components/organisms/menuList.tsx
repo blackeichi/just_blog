@@ -1,5 +1,19 @@
+import { MENU_LIST } from "@/constants/path";
 import { layoutProps } from "@/types/layoutT";
+import MainMenu from "../molecules/mainMenu";
+import { GLOBAL_COLOR } from "@/constants/color";
 
 export default function MenuList({ isOpen, setIsOpen }: layoutProps) {
-  return <div></div>;
+  return (
+    <div
+      className={`w-40 border-2 border-gray-300 border-b-gray-600 border-r-gray-600`}
+      style={{
+        backgroundColor: GLOBAL_COLOR.gray,
+      }}
+    >
+      {(Object.keys(MENU_LIST) as Array<keyof typeof MENU_LIST>).map((menu) => (
+        <MainMenu key={menu} menu={MENU_LIST[menu]} />
+      ))}
+    </div>
+  );
 }

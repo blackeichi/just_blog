@@ -1,14 +1,12 @@
-import { menuEnum } from "@/constants/path";
+import { MENUS } from "@/constants/path";
 
-export interface SubMenu {
+export type eachMenuT = {
   name: string;
   path: string;
-}
-export interface Mainmenu {
-  id: keyof typeof menuEnum;
-  name: string;
-  path?: string;
-  subMenus?: SubMenu[];
-}
+  imgPath?: string;
+  subMenus?: menuT;
+};
 
-export type MenuItem = Mainmenu;
+export type menuT = {
+  [K in (typeof MENUS)[keyof typeof MENUS]]: eachMenuT;
+};
