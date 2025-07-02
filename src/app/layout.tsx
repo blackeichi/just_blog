@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import MainLayout from "../components/template/mainLayout";
 import { notoSans } from "@/utils/fonts";
+import { GLOBAL_COLOR } from "@/constants/color";
+import Footer from "@/components/organisms/footer";
+import DesktopLayout from "@/components/template/desktopLayout";
 
 export const metadata: Metadata = {
   title: {
@@ -18,8 +20,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${notoSans.className} antialiased`}>
-        <MainLayout>{children}</MainLayout>
+      <body
+        className={`${notoSans.className} antialiased w-screen h-screen flex flex-col overflow-hidden`}
+        style={{
+          backgroundColor: GLOBAL_COLOR.bgGreen,
+        }}
+      >
+        <DesktopLayout>{children}</DesktopLayout>
+        <Footer />
       </body>
     </html>
   );
