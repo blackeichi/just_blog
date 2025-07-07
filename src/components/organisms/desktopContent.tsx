@@ -13,13 +13,13 @@ export default function DesktopContent({
 } & desktopProps) {
   const path = usePathname();
   return (
-    <>
+    <div className="z-20 w-full h-full">
       {path === ROUTES.HOME ? (
         <>{children}</>
       ) : (
         <div
           className={`border-[3px] border-l-gray-300 border-t-gray-300 border-r-gray-600 border-b-gray-600 p-0.5 w-full h-full transition-[scale]] ${
-            isMax ? "scale-100" : "scale-95"
+            isMax ? "scale-100" : "xl:scale-95 2xl:scale-90"
           }`}
           style={{
             backgroundColor: GLOBAL_COLOR.gray,
@@ -35,6 +35,6 @@ export default function DesktopContent({
           {children}
         </div>
       )}
-    </>
+    </div>
   );
 }

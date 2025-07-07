@@ -1,4 +1,4 @@
-import { menuByRoutesT, menuT } from "@/types/menuT";
+import { EachMenu, MenuValue } from "@/types/menuT";
 
 export const MENUS = {
   HOME: "HOME",
@@ -7,25 +7,26 @@ export const MENUS = {
   END: "END",
 } as const;
 
-export const ROUTES = {
+export const ROUTES: Record<MenuValue, string> = {
   [MENUS.HOME]: "/",
   [MENUS.PROFILE]: "/profile",
   [MENUS.CAREER]: "/career",
   [MENUS.END]: "/end",
 } as const;
 
-export const MENU_BY_ROUTE: menuByRoutesT = {
+export const MENU_BY_ROUTE: Record<(typeof ROUTES)[MenuValue], MenuValue> = {
   [ROUTES.HOME]: MENUS.HOME,
   [ROUTES.PROFILE]: MENUS.PROFILE,
   [ROUTES.CAREER]: MENUS.CAREER,
   [ROUTES.END]: MENUS.END,
 } as const;
 
-export const MENU_LIST: menuT = {
+export const MENU_LIST: Record<MenuValue, EachMenu> = {
   [MENUS.HOME]: {
     name: "Home",
     path: ROUTES[MENUS.HOME],
     imgPath: "/images/myComputer.png",
+    subMenus: [{ name: "HOME 열기", path: ROUTES[MENUS.HOME] }],
   },
   [MENUS.PROFILE]: {
     name: "Profile",

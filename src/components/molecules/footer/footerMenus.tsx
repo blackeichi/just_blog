@@ -3,7 +3,7 @@ import { GLOBAL_COLOR } from "@/constants/color";
 import { MENU_LIST } from "@/constants/path";
 import { footerProps } from "@/types/layoutT";
 
-export default function FooterMenus({ isOpen, setIsOpen }: footerProps) {
+export default function FooterMenus({ isOpen }: footerProps) {
   return (
     <>
       {isOpen && (

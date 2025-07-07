@@ -11,7 +11,7 @@ export default function DesktopLayout({
 }) {
   const [isMax, setIsMax] = useState(false);
   return (
-    <div className="h-full flex ">
+    <div className="h-full flex justify-center">
       <DesktopMenus isMax={isMax} setIsMax={setIsMax} />
       <DesktopContent isMax={isMax} setIsMax={setIsMax}>
         {children}

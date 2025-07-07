@@ -23,7 +23,7 @@ export default function Footer() {
   return (
     <div
       id={FOOTER_ELEMENT}
-      className="unDraggable w-full h-[35px] box-content py-0.5 px-1 border-t-[3px] border-t-gray-300 flex items-center justify-between text-[11px] relative"
+      className="select-none z-50 w-full h-[35px] box-content py-0.5 px-1 border-t-[3px] border-t-gray-300 flex items-center justify-between text-[11px] relative"
       style={{ backgroundColor: GLOBAL_COLOR.gray }}
       tabIndex={-1}
       onBlur={() => {

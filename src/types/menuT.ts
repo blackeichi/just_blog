@@ -1,16 +1,17 @@
-import { MENUS, ROUTES } from "@/constants/path";
+import { MENUS } from "@/constants/path";
 
-export type eachMenuT = {
+export type EachSubMenu = {
+  name: string;
+  path: string;
+};
+
+export type EachMenu = {
   name: string;
   path: string;
   imgPath?: string;
-  subMenus?: menuT;
+  subMenus?: EachSubMenu[];
 };
 
-export type menuT = {
-  [K in (typeof MENUS)[keyof typeof MENUS]]: eachMenuT;
-};
+export type MenuKey = keyof typeof MENUS;
 
-export type menuByRoutesT = {
-  [K in (typeof ROUTES)[keyof typeof ROUTES]]: (typeof MENUS)[keyof typeof MENUS];
-};
+export type MenuValue = (typeof MENUS)[MenuKey];
