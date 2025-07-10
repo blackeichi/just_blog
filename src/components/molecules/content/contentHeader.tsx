@@ -2,7 +2,7 @@ import ContentHeaderIcon from "@/components/atoms/contentHeaderIcon";
 import ImgComponent from "@/components/atoms/imgComponent";
 import ReactIcon from "@/components/atoms/reactIcon";
 import { desktopProps } from "@/types/layoutT";
-import { eachMenuT } from "@/types/menuT";
+import { EachMenu } from "@/types/menuT";
 import { pressStart } from "@/utils/fonts";
 import Link from "next/link";
 import { FaRegWindowRestore } from "react-icons/fa";
@@ -13,7 +13,7 @@ export default function ContentHeader({
   target,
   isMax,
   setIsMax,
-}: { target: eachMenuT } & desktopProps) {
+}: { target: EachMenu } & desktopProps) {
   return (
     <div className="shrink-0 w-full h-7 bg-blue-900 flex justify-between items-center px-1">
       <div

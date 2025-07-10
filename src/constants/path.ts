@@ -5,6 +5,7 @@ export const MENUS = {
   PROFILE: "PROFILE",
   CAREER: "CAREER",
   END: "END",
+  GAME: "GAME",
 } as const;
 
 export const ROUTES: Record<MenuValue, string> = {
@@ -12,6 +13,7 @@ export const ROUTES: Record<MenuValue, string> = {
   [MENUS.PROFILE]: "/profile",
   [MENUS.CAREER]: "/career",
   [MENUS.END]: "/end",
+  [MENUS.GAME]: "/game",
 } as const;
 
 export const MENU_BY_ROUTE: Record<(typeof ROUTES)[MenuValue], MenuValue> = {
@@ -19,6 +21,7 @@ export const MENU_BY_ROUTE: Record<(typeof ROUTES)[MenuValue], MenuValue> = {
   [ROUTES.PROFILE]: MENUS.PROFILE,
   [ROUTES.CAREER]: MENUS.CAREER,
   [ROUTES.END]: MENUS.END,
+  [ROUTES.GAME]: MENUS.GAME,
 } as const;
 
 export const MENU_LIST: Record<MenuValue, EachMenu> = {
@@ -40,6 +43,11 @@ export const MENU_LIST: Record<MenuValue, EachMenu> = {
   [MENUS.END]: {
     name: "End",
     path: ROUTES[MENUS.END],
+    imgPath: "/images/monitor_moon.png",
+  },
+  [MENUS.GAME]: {
+    name: "Game",
+    path: ROUTES[MENUS.GAME],
     imgPath: "/images/monitor_moon.png",
   },
 };

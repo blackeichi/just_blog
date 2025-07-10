@@ -1,8 +1,8 @@
 import { GLOBAL_COLOR } from "@/constants/color";
 import { MENU_BY_ROUTE, MENU_LIST, ROUTES } from "@/constants/path";
 import { usePathname } from "next/navigation";
-import ContentHeader from "../molecules/content/contentHeader";
 import { desktopProps } from "@/types/layoutT";
+import ContentHeader from "../molecules/content/contentHeader";
 
 export default function DesktopContent({
   isMax,
