@@ -26,7 +26,6 @@ export const MENU_LIST: Record<MenuValue, EachMenu> = {
     name: "Home",
     path: ROUTES[MENUS.HOME],
     imgPath: "/images/myComputer.png",
-    subMenus: [{ name: "HOME 열기", path: ROUTES[MENUS.HOME] }],
   },
   [MENUS.PROFILE]: {
     name: "Profile",
@@ -43,4 +42,4 @@ export const MENU_LIST: Record<MenuValue, EachMenu> = {
     path: ROUTES[MENUS.END],
     imgPath: "/images/monitor_moon.png",
   },
-} as const;
+};

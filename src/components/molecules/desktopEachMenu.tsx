@@ -15,7 +15,6 @@ export default function DesktopEachMenu({ menu }: { menu: EachMenu }) {
         setIsSelected(false);
       }}
     >
-      {/* sub menus */}
       {isSelected && (
         <div
           className="absolute z-30 text-black left-10 top-10 p-1.5 whitespace-nowrap border-[3px] border-t-gray-300 border-l-gray-300 border-r-gray-600 border-b-gray-600 text-[13px] flex flex-col gap-8 outline-0"
@@ -26,16 +25,12 @@ export default function DesktopEachMenu({ menu }: { menu: EachMenu }) {
             event.preventDefault();
           }}
         >
-          {menu?.subMenus &&
-            Object.values(menu.subMenus).map((sub) => (
-              <Link
-                key={sub.path}
-                href={sub.path}
-                className="flex gap-5 hover:bg-blue-900 hover:text-white p-2 py-1"
-              >
-                {sub.name}
-              </Link>
-            ))}
+          <Link
+            href={menu.path}
+            className="flex gap-5 hover:bg-blue-900 hover:text-white p-2 py-1"
+          >
+            {`${menu.name} 열기`}
+          </Link>
         </div>
       )}
       {/* icon */}

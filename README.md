@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🧩 각 메뉴별 세부 내용
 
-## Getting Started
+1. 📘 표지 (Cover)
+   이름 / 포지션: "정우 한 | 프론트엔드 개발자" 또는 "UI/UX 디자이너"
 
-First, run the development server:
+한 줄 소개: “사용자를 이해하는 프론트엔드 개발자입니다”
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+비주얼 요소: 심플한 이미지, 로고, 컬러 포인트
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+(선택) 다운로드 버튼: 이력서 PDF 다운로드 등
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. 👤 프로필 (Profile)
+   자기소개: 경력 요약, 핵심 성격, 추구하는 가치
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+연락처 정보: 이메일, GitHub, 블로그 링크 등
 
-## Learn More
+기술스택 요약: 주요 언어/프레임워크 간단 요약표
 
-To learn more about Next.js, take a look at the following resources:
+(선택) 성격 요약: MBTI, 협업 스타일, 일할 때 중요하게 생각하는 것 등
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. 💼 커리어 (Career / Projects)
+   구성 방식 추천: 카드형 프로젝트 소개 + 타임라인 또는 연대기
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+회사명 / 프로젝트명
 
-## Deploy on Vercel
+기간
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+역할 및 기여 (예: UI 구현 100%, API 연동 80% 등)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+성과 지표 (ex. 페이지 속도 50% 개선, 사용자 수 증가 등)
+
+사용 기술 (React, TypeScript, Next.js 등)
+
+스크린샷 or GIF: 가능하면 꼭 포함!
+
+링크: 배포 URL, GitHub 등
+
+4. 🛠️ 스킬 & 툴 (Skillset)
+   Frontend / Backend: React, Vue, Node.js, Express, etc.
+
+DevOps: Docker, Vercel, AWS 등
+
+협업 툴: Jira, Notion, Figma
+
+디자인툴 (디자이너인 경우): Photoshop, Sketch, Adobe XD 등
+
+형식: 뱃지, 아이콘, 혹은 기술 그래프
+
+5. 🌱 사이드 프로젝트 (선택)
+   회사 외에도 "이 사람은 주체적으로 움직인다"는 인상을 줌.
+
+토이 프로젝트
+
+오픈소스 기여
+
+해커톤 참가 기록
+
+기술 블로그 링크
+
+6. 🎯 엔딩 (Ending / Contact)
+   간단한 마무리 멘트:
+   “끝까지 봐주셔서 감사합니다. 함께 성장할 수 있는 팀을 찾고 있습니다.”
+
+CTA (Call To Action):
+
+이메일
+
+GitHub / LinkedIn
+
+이력서 다운로드
+
+QR 코드(디자이너일 경우 이력서/포폴 다운로드용)
+
+📌 추가 팁
+각 페이지마다 핵심 키워드를 강조: 예: 성장, 협업, 책임감, 기여
+
+반응형 레이아웃 고려: 특히 개발자 포트폴리오라면 필수
+
+애니메이션 or 인터랙션 (가볍게): 사용자 경험 차별화
