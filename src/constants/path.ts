@@ -4,24 +4,21 @@ export const MENUS = {
   HOME: "HOME",
   PROFILE: "PROFILE",
   CAREER: "CAREER",
-  END: "END",
-  GAME: "GAME",
+  CLOSING: "CLOSING",
 } as const;
 
 export const ROUTES: Record<MenuValue, string> = {
   [MENUS.HOME]: "/",
   [MENUS.PROFILE]: "/profile",
   [MENUS.CAREER]: "/career",
-  [MENUS.END]: "/end",
-  [MENUS.GAME]: "/game",
+  [MENUS.CLOSING]: "/closing",
 } as const;
 
 export const MENU_BY_ROUTE: Record<(typeof ROUTES)[MenuValue], MenuValue> = {
   [ROUTES.HOME]: MENUS.HOME,
   [ROUTES.PROFILE]: MENUS.PROFILE,
   [ROUTES.CAREER]: MENUS.CAREER,
-  [ROUTES.END]: MENUS.END,
-  [ROUTES.GAME]: MENUS.GAME,
+  [ROUTES.CLOSING]: MENUS.CLOSING,
 } as const;
 
 export const MENU_LIST: Record<MenuValue, EachMenu> = {
@@ -40,14 +37,9 @@ export const MENU_LIST: Record<MenuValue, EachMenu> = {
     path: ROUTES[MENUS.CAREER],
     imgPath: "/images/postsFolder.png",
   },
-  [MENUS.END]: {
+  [MENUS.CLOSING]: {
     name: "End",
-    path: ROUTES[MENUS.END],
-    imgPath: "/images/monitor_moon.png",
-  },
-  [MENUS.GAME]: {
-    name: "Game",
-    path: ROUTES[MENUS.GAME],
+    path: ROUTES[MENUS.CLOSING],
     imgPath: "/images/monitor_moon.png",
   },
 };
